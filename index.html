@@ -406,7 +406,6 @@ renderAll(); setView('results');
       const r = JSON.parse(localStorage.getItem('dft-results') || 'null'); if (r) results = r;
       const c = JSON.parse(localStorage.getItem('dft-config') || 'null'); if (c) config = {...DEFAULT_CONFIG, ...c};
     } catch(e){}
-    showNotice("Sign in to claude.ai to share live scores with everyone. For now, scores are saved on this device only.");
     renderAll(); return;
   }
   db = d;
